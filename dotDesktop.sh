@@ -2,7 +2,7 @@
 
 if [[ -z "$1" ]]; then
     echo "Error: No has proporcionado un archivo."
-    echo "Uso: newappdesk <archivo.AppImage> <nombre_para_desktop>"
+    echo "Uso: dotDesktop <archivo.AppImage> <nombre_para_desktop>"
     exit 1
 fi
 
@@ -20,7 +20,7 @@ fi
 
 if [[ -z "$2" ]]; then
     echo "Error: No has proporcionado un nombre para el .desktop"
-    echo "Uso: newappdesk <archivo.AppImage> <nombre_para_desktop>"
+    echo "Uso: dotDesktop <archivo.AppImage> <nombre_para_desktop>"
     exit 1
 fi
 
@@ -34,4 +34,4 @@ Name=$2\n
 "
 
 echo -e $text_desktop > $path_desktop
-echo "Nuevo desktop creado para $2 en $path_desktop"
+echo "Nuevo .desktop creado para $2 en $path_desktop"
